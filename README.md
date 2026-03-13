@@ -44,7 +44,7 @@ total 44,426 paramerters
 ### Train (backpropagation)
 손실은 Cross Entropy Loss 사용  
 
-Cross Entropy Loss\\
+Cross Entropy Loss\
 $$
 L = - \log(p_y)
 $$
