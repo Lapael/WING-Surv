@@ -116,4 +116,4 @@ $$\frac{\partial L}{\partial z_j} = \sum \frac{\partial L}{\partial p_i} \frac{\
 
 $$\frac{\partial L}{\partial p_i} = -\frac{y_i}{p_i}$$
 
-$$\frac{\partial p_i}{\partial z_j} = \frac{(e^z_i)'\sum e^z_j - e^z_i (\sum e^z_j)'}{(\sum e^z_j)^2}
+$$\frac{\partial p_i}{\partial z_j} = \frac{(e^z_i)'\sum e^z_j - e^z_i (\sum e^z_j)'}{(\sum e^z_j)^2}$$
