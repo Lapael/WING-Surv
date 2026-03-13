@@ -45,6 +45,7 @@ total 44,426 paramerters
 손실은 Cross Entropy Loss 사용  
 
 Cross Entropy Loss\
+
 $$
 L = - \log(p_y)
 $$
