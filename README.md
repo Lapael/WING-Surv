@@ -143,4 +143,4 @@ $$\frac{\delta_{ij}e^{z_i}}{\sum e^{z_j}} = p_i delta_{ij}$$
 
 $$\frac{e^{z_i}e^{z_j}}{(\sum e^{z_j})^2} = p_i p_j$$
 
-$$\frac{\partial p_i}{\partial z_j} = p_i \delta_{ij} - p_i p_j
+$$\frac{\partial p_i}{\partial z_j} = p_i \delta_{ij} - p_i p_j$$
