@@ -128,3 +128,13 @@ $$
 0 & \text{if } i \neq j
 \end{cases}
 $$
+
+따라서 앞서 몫 미분으로 표현한 식을 계산하기 위해 분자, 분모를 각각 미분하면,
+
+$$\frac{\partial}{\partial z_j}e^{z_i} = \delta_ij e^{z_i}$$
+
+$$\frac{\partial \sum e^{z_j}}{\partial z_j} = e^{z_j}$$
+
+이에 따라
+
+$$\frac{\partial p_i}{\partial z_j} = \frac{(\delta_ij e^{z_i})\sum e^{z_j} - e^{z_i}e^{z_j}}{(\sum e^{z_j})^2}$$
