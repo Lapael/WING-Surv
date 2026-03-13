@@ -222,5 +222,5 @@ $$\frac{\partial L}{\partial W}$$와 $$\frac{\partial L}{\partial b}$$는 optimi
 ### fc -> AvgPool 역전파
 
 AvgPooling Layer은 단순 다운샘플링 레이어이기 때문에  
-gradient($$\frac{\partial L}{\partial y}$$)를 동등하게 분배하여 역전파한다.
+gradient($$\frac{\partial L}{\partial y}$$)를 동등하게 분배하여 역전파한다. ($$y=\frac{\sum_{i=1}^N x_i}{N}$$)
 
