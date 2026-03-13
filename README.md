@@ -17,7 +17,7 @@ fc (120) -> ReLU
 fc (84) -> ReLU  
 fc (10) -> ReLU  
 Softmax  
----
+##
 
 이미지 shape 변화  
 
