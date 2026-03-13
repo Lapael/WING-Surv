@@ -218,3 +218,9 @@ $$\frac{\partial L}{\partial x} = \frac{\partial L}{\partial z} W^T$$
 
 여기서 $$\frac{\partial L}{\partial x}$$는 이전 레이어로 전달되고  
 $$\frac{\partial L}{\partial W}$$와 $$\frac{\partial L}{\partial b}$$는 optimizer가 파라미터를 업데이트 할 때 쓰인다.
+
+### fc -> AvgPool 역전파
+
+AvgPooling Layer은 단순 다운샘플링 레이어이기 때문에  
+gradient($$\frac{\partial L}{\partial y}$$)를 동등하게 분배하여 역전파한다.
+
