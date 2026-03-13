@@ -90,17 +90,23 @@ Softmax 수식
 #
 
 ### Train (backpropagation)
+Backpropagation에 대해서는 기존에 수학적으로 이해하고 있지 않았기 때문에,  
+좀 더 엄밀하게 서술하도록 하겠다.  
+
 손실은 Cross Entropy Loss 사용  
 
-$$L = - \log(p_y)$$
+$$L = - y_i\log(p_y)$$
 
 Cross Entropy Loss 수식  
-$$p_y$$ : 정답 클래스 y에 대한 예측  
+$$p_y$$ : 클래스 y에 대한 예측  
+$$y_i$$ : y가 정답 클래스면 1, 아니면 0  
+
+-> 정답 클래스에 대한 값만 역전파에 사용됨.  
 
 #
 
-$$\frac{\partial L}{\partial W}=\frac{\partial L}{\partial z}\
-x^T$$
+역전파 = Loss 값을 기반으로 gradient를 계산하는 것.  
+이렇게 계산한 gradient를 기반으로 optimizer을 이용해 파라미터를 업데이트해서 학습  
 
-fc layer backward  
-가중치 gradient  
+#
+
