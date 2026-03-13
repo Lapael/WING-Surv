@@ -215,3 +215,6 @@ $$\frac{\partial L}{\partial W} = (\frac{\partial L}{\partial z}) x^T$$
 $$\frac{\partial L}{\partial b} = \frac{\partial L}{\partial z}$$
 
 $$\frac{\partial L}{\partial x} = \frac{\partial L}{\partial z} W^T$$
+
+여기서 $$\frac{\partial L}{\partial x}$$는 이전 레이어로 전달되고  
+$$\frac{\partial L}{\partial W}$$와 $$\frac{\partial L}{\partial b}$$는 optimizer가 파라미터를 업데이트 할 때 쓰인다.
