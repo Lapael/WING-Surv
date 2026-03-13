@@ -46,7 +46,7 @@ total 44,426 paramerters
 $$y_{f,i,j} = \sum_{c=1}^{C} \sum_{u=1}^{k} \sum_{v=1}^{k}
 w_{f,c,u,v} \cdot x_{c,i+u-1,j+v-1} + b_f$$
 
-Convolution Layer의 수식  
+Convolution Layer 수식  
 $$f$$ : 아웃풋 채널  
 $$i, j$$ : 픽셀 $$y$$의 위치  
 $$C$$ : 인풋 채널  
@@ -54,6 +54,40 @@ $$k$$ : 커널 사이즈(5)
 $$w_{f,c,u,v}$$ : $$f$$번째 아웃풋 채널, $$c$$번째 인풋 채널, $$[u, v]$$칸의 가중치  
 $$x$$ : 인풋 행렬  
 $$b_f$$ : $$f$$번째 채널의 편향  
+
+#
+
+$$\mathrm{ReLU}(x) = \max(0, x)$$
+
+ReLU 활성화 함수
+
+#
+
+$$y_{i,j} =
+\frac{1}{k^2}
+\sum_{u=1}^{k}\sum_{v=1}^{k}
+x_{k i + u, k j + v}$$
+
+Avgerage Pooling Layer 수식
+$$k$$ : 커널 사이즈(2)
+
+#
+
+$$z = Wx + b$$
+
+Fully Connected Layer 수식
+$$W$$ : 가중치
+$$b$$ : 편향
+
+#
+
+$$p_i =
+\frac{e^{z_i}}
+{\sum_{j=1}^{C} e^{z_j}}$$
+
+Softmax 수식
+
+#
 
 ### Train (backpropagation)
 손실은 Cross Entropy Loss 사용  
